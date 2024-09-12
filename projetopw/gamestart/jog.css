@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10&family=Rubik+Wet+Paint&display=swap');
+
+body {
+  background-color: #320377;
+  margin:0;
+  padding:0;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  align-items: flex-start; /* Alinha o conteúdo no topo */
+  height: 100vh;
+}
+
+/*REMOVER TUDO ISSO E SÓ REFERENCIAR O HEADER*/
+header {
+    background-color: #250641; /* Roxo */
+    padding: 10px 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color:#250641;  /* Cor de fundo do menu */
+    padding: 5px 1px; /* Espaçamento interno */
+    height: 50px; /* Reduzindo a altura da barra de menu *//* Adicione uma cor de fundo para destacar o menu */
+    margin-right: 400px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre as imagens */
+    max-width: 50px; /* Defina a largura máxima da logo */
+    margin-right: 20px;
+}
+.menu-logo img {
+    height: auto;
+    max-height: 80px; /* Ajuste a altura máxima conforme necessário */
+    width: auto; /* Para garantir que a imagem ocupe toda a largura permitida */
+}
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.menu-items li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu-items li:first-child {
+    margin-left: 0; /* Remove a margem do primeiro item */
+}
+.menu-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.menu-items li a:hover {
+     color: #fdfcfd; /* Branco mais claro para o hover */
+}
+.menu-buttons {
+    display: flex;
+    justify-content: center; /* Centralizando os botões horizontalmente */
+    align-items: center; 
+    margin-right: 80px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+/* Estilo da barra de pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search-container input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+}
+.search-container button {
+    padding: 0; /* Remove o padding padrão do botão */
+    border: none;
+    background-color: transparent; /* Remove o fundo do botão */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-icon {
+    width: 20px; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste conforme necessário */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu-items li {
+        margin: 10px 0;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .menu-logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-logo img {
+        max-height: 60px; /* Ajuste a altura máxima para dispositivos menores */
+    }
+}
+.menu-buttons {
+    display: flex;
+    justify-content: center; /* Centralizando os botões horizontalmente */
+    align-items: center; 
+    margin-right: 80px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/*CSS OFICIAL*/
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.containerr {
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-start;
+  width: 100%;
+    margin-top: 250px;
+    gap: 10px; 
+    
+}
+
+.botao1,
+.botao2,
+.botao3 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+   margin: 0 50px;
+  
+}
+
+.containerr {
+  
+  /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha os botões no topo do contêiner (ajuste conforme necessário) */
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 250px; /* Ajuste a margem superior para mover os botões mais para baixo */
+}
+
+.botao1 img,
+.botao2 img,
+.botao3 img {
+  width: 350px; /* Aumenta a largura dos botões */
+  height: 350px; /* Aumenta a altura dos botões */
+  border-radius: 40px;
+}
+
+
+.botao1:hover img {
+  transform: translateY(10px); 
+   content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
+  
+}
+.botao2:hover img {
+  transform: translateY(10px); 
+   content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
+
+}
+.botao3:hover img {
+  transform: translateY(10px); 
+   content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
+
+}
