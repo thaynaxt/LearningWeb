@@ -2,15 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10&family=Rubik+Wet+Paint&display=swap');
 
 body {
-  background-color: #320377;
   margin:0;
   padding:0;
+  background-image: url('images/jogos.png');
+  background-size: cover; /* Faz com que a imagem cubra toda a área do site */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  position: relative; /* Necessário para o overlay funcionar */
 
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Preto com 80% de opacidade */
+    z-index: -1;
+  }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .container {

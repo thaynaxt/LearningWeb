@@ -2,75 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10&family=Rubik+Wet+Paint&display=swap');
 
 body {
-  background-color: #320377;
+  /*background-color: #320377;*/
   margin:0;
   padding:0;
+  background-image: url('images/jogos.png');
+  background-size: cover; /* Faz com que a imagem cubra toda a área do site */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  position: relative; /* Necessário para o overlay funcionar */
 
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Preto com 80% de opacidade */
+    z-index: -1;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#VECTOR {
-position: absolute;
-width: 134.66px;
-height: 350.5px;
-left: 0px;
-top: 550.29px;
-bottom: 0; /* alinha a parte inferior do SVG com a parte inferior da tela */
-margin: 0; /* garante que não haja margem */
-padding: 0; /* garante que não haja preenchimento */
-border: none; /* remove qualquer borda */
+.container, .containerr {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
 }
-#GAMES {
-        position: absolute;
-        width: 251.45px;
-        height: 193px;
-        left: 1600px; /* Diminuí o valor para mover mais para a esquerda */
-        top: 700px; /* Aumentei o valor para mover mais para baixo */
-}
-
-#esquerdo {
-    position: absolute;
-    width: 369px;
-    height: 414px;
-    left: -27px;
-    top: 707px;
-
-
-}
-.vector7 {
-        position: absolute;
-        right: 0;
-        top: 120px; /* Ou ajuste conforme necessário */
-        width: 130px; /* Ajuste o tamanho conforme necessário */
-}
-.vector4 {
-        position: absolute;
-        right: 0;
-        top: 10px; /* Ou ajuste conforme necessário */
-        width: 130px; /* Ajuste o tamanho conforme necessário */
-}
-.group6 {
-    position: absolute;
-    left: 0; /* Alinha o elemento ao lado esquerdo */
-    top: 70px;  /* Alinha o elemento ao topo */
-    width: 60px;
-    height: 200px; /* Ajuste a altura conforme necessário */
-   
-
-  
-
-    
-}
-
 .container {
     display: flex;
     justify-content: center;
   align-items: flex-start; /* Alinha o conteúdo no topo */
   height: 100vh;
+  flex-direction: column; /* Alinha os elementos em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
 }
 
 h1 {
@@ -88,7 +59,7 @@ h1 {
     padding: 20px 30px; 
     font-size: 25px; 
     border: 2px solid #250641; 
-    border-radius: 10px; 
+    border-radius: 20px; 
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     cursor: pointer; 
   text-decoration: none;
@@ -101,7 +72,7 @@ h1 {
 }
 
 header {
-    background-color: #250641; /* Roxo */
+    background-color: #0d0217; /* Roxo */
     padding: 10px 20px;
 }
 
@@ -110,7 +81,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: "Inter", sans-serif;
-    background-color:#250641;  /* Cor de fundo do menu */
+    background-color: #0d0217;  /* Cor de fundo do menu */
     padding: 5px 1px; /* Espaçamento interno */
     height: 50px; /* Reduzindo a altura da barra de menu *//* Adicione uma cor de fundo para destacar o menu */
     margin-right: 400px; 
@@ -260,14 +231,15 @@ h3 {
 }
 
 .containerr {
-  display: flex; 
-  justify-content: center; 
-  align-items: flex-start;
-  width: 100%;
-    margin-top: 250px;
-    gap: 10px; 
-    
-}
+    margin:0;
+    padding:0;
+    background-image: url('images/jogos.png');
+    background-size: cover; /* Faz com que a imagem cubra toda a área do site */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    position: relative; /* Necessário para o overlay funcionar */
+  }
+  
 
 .botao1,
 .botao2,
@@ -279,13 +251,13 @@ h3 {
   
 }
 
-.containerr {
+/*.containerr {
   
-  /* Centraliza horizontalmente */
-  align-items: flex-start; /* Alinha os botões no topo do contêiner (ajuste conforme necessário) */
-  gap: 10px; /* Espaçamento entre os botões */
-  margin-top: 250px; /* Ajuste a margem superior para mover os botões mais para baixo */
-}
+  /* Centraliza horizontalmente 
+  align-items: flex-start;  Alinha os botões no topo do contêiner (ajuste conforme necessário) 
+  gap: 10px;  Espaçamento entre os botões 
+  margin-top: 250px; /* Ajuste a margem superior para mover os botões mais para baixo  
+}*/
 
 .botao1 img,
 .botao2 img,
@@ -311,3 +283,4 @@ h3 {
    content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
 
 }
+
