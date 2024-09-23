@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link href="stylesheets/velha.css" rel="stylesheet" type="text/css" />
+  
+<body>
+
+  <!-- Incluir o header -->
+  <%- include('partials/header') %>
+
+  <main>
+    <h1>JOGO DA VELHA</h1>
+    <hr />
+    <div class="game">
+      <button data-i="1"></button>
+      <button data-i="2"></button>
+      <button data-i="3"></button>
+      <button data-i="4"></button>
+      <button data-i="5"></button>
+      <button data-i="6"></button>
+      <button data-i="7"></button>
+      <button data-i="8"></button>
+      <button data-i="9"></button>
+    </div>
+    <h2 class="currentPlayer"></h2>
+
+    <div class="game-message hidden">
+      <p class="message"></p>
+      <button class="restart-button">JOGAR NOVAMENTE</button>
+    </div>
+    <h2 class="currentPlayer"></h2>
+
+    
+  </main>
+
+  <%- include('partials/footer') %> <!-- Incluir o footer aqui -->
+  <script src="javascripts/velha.js"></script>
+</body>
+</html>

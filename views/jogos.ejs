@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheets/jogos.css" rel="stylesheet" type="text/css" />
+    <title>Jogar</title>
+</head>
+<body>
+   <!-- Incluir o header -->
+   <%- include('partials/header') %>
+   
+   <div class="container">
+       <div class="containerr">
+           <button class="botao1" onclick="redirecionarParaVelha()">
+               <img src="images/velha.png" alt="Imagem 1">
+           </button>
+
+           <button class="botao2" onclick="redirecionarParaForca()">
+               <img src="images/forca.png" alt="Imagem 2">
+           </button>
+
+           <button class="botao3">
+               <img src="images/memoria.png" alt="Imagem 3">
+           </button>
+       </div>
+   </div>
+     
+   <%- include('partials/footer') %> <!-- Incluir o footer aqui -->
+
+   <script src="javascripts/jogos.js"></script>
+</body>
+</html>

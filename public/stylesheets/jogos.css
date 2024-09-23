@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10&family=Rubik+Wet+Paint&display=swap');
+body {
+    margin:0;
+    padding:0;
+    background-image: url('../images/jogos.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    min-height: 100vh;
+  }
+  
+body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 180px;
+    flex: 1; 
+    height: 100vh;
+}
+
+.botao1,
+.botao2,
+.botao3 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+   margin: 0 30px;
+}
+
+.botao1 img,
+.botao2 img,
+.botao3 img {
+  width: 380px; 
+  height: 380px; 
+  border-radius: 40px;
+}
+
+
+.botao1:hover img {
+  transform: translateY(10px); 
+   content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
+  
+}
+.botao2:hover img {
+  transform: translateY(10px); 
+   content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
+
+}
+.botao3:hover img {
+  transform: translateY(10px); 
+   content: url('https://image.slidesharecdn.com/secomp2013-130315183514-phpapp01/85/aperte-start-comece-o-jogo-1-320.jpg');
+
+}

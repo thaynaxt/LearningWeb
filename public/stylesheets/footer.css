@@ -1,0 +1,32 @@
+footer {
+    background-color: #0d0217; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer-container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o footer na página */
+}
+
+.footer-links {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 10px 0 0; /* Margem acima da lista */
+}
+
+.footer-links li {
+    display: inline; /* Exibe os itens em linha */
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.footer-links a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.footer-links a:hover {
+    color: #fdfcfd; /* Cor do link ao passar o mouse */
+}

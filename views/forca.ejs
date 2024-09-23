@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link href="stylesheets/forca.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Incluir o header -->
+    <%- include('partials/header') %>
+
+    <!-- TOPO -->
+    <h1>Jogo da Forca</h1>
+    <img id="imagem" src="images/forca1.png" alt="Descrição da imagem">
+    
+    <div id="exibicao-palavra"></div>
+    <p id="dica" style="font-style: italic;"></p> <!-- Novo elemento para a dica -->
+    <input type="text" id="entrada-letra" placeholder="Chute uma letra" maxlength="1">
+    <button id="btn-chutar" onclick="chutarLetra()">Chutar</button>
+
+    <!-- BAIXO -->
+    <h2>Letras Chutadas</h2>
+    <div id="letras-chutadas"></div>
+    <div id="mensagem" style="display: none;">Você ganhou!</div>
+    <div style="text-align: center;">
+        <button id="botao-reiniciar" onclick="iniciarJogo()" style="display: none;">Recomeçar</button>
+    </div>
+
+    <%- include('partials/footer') %> <!-- Incluir o footer aqui -->
+    
+    <!-- LÓGICA JAVASCRIPT -->
+    <script src="javascripts/forca.js"></script>
+    
+
+</body>
+
+</html>
