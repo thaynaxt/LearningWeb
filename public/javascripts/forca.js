@@ -16,7 +16,14 @@ async function buscarPalavraTema() {
     }
 }
 
-
+function configurarTeclaEnter() {
+    const entradaLetra = document.getElementById('entrada-letra');
+    entradaLetra.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            chutarLetra(); // Chama a função quando "Enter" é pressionado
+        }
+    });
+}
 
 async function iniciarJogo() {
     document.getElementById('botao-reiniciar').style.display = 'none';
@@ -35,7 +42,10 @@ async function iniciarJogo() {
     numeroErros = 0;
 
     atualizarExibicao(); // Atualiza a interface com os dados novos
+    configurarTeclaEnter(); // Configura o evento para a tecla Enter
+    
 }
+
 
 
 function atualizarExibicao() {
@@ -90,6 +100,5 @@ function encerrarJogo(mensagem) {
     document.getElementById('mensagem').innerText = `${mensagem} A palavra era: ${palavraEscolhida}`;
     document.getElementById('botao-reiniciar').style.display = 'block';
 }
-
 
 window.onload = iniciarJogo;

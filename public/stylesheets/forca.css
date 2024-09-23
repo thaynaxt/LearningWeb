@@ -1,6 +1,7 @@
 html, body {
-  height: 100%; /* Certifica-se de que o body ocupe toda a altura da tela */
+    /* Certifica-se de que o body ocupe toda a altura da tela */
   margin: 0; /* Remove margens padrão */
+  padding: 0;
 }
 
 
@@ -15,11 +16,12 @@ body {
   background-position: center;
   color: white;
   position: relative; /* Adicionado para controle de posicionamento */
+  
 }
 
 body::before {
   content: '';
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,14 +29,13 @@ body::before {
   background-color: rgba(0, 0, 0, 0.8); 
   z-index: -1;
 }
+
 footer {
   width: 100%; 
-   margin-top: auto; /* Faz com que o footer fique na parte inferior */
-
 }
 
 #imagem {
-  width: 300px; /* Defina a largura da imagem como preferir */
+  width: 400px; /* Defina a largura da imagem como preferir */
 }
 
 #exibicao-palavra {
@@ -87,3 +88,4 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: #2e0651; /* Cor da borda ao focar */
 }
+
